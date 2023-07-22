@@ -1,0 +1,18 @@
+server:
+  port: 0
+
+spring:
+  application:
+    name: ms-account
+  devtools:
+    remote:
+      restart:
+        enabled: true
+
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka
+
+

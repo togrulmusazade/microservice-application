@@ -1,0 +1,25 @@
+databaseChangeLog:
+  - changeSet:
+      id: 20221126
+      author: Huseyn Ahmadov
+      changes:
+        - createTable:
+            tableName: payments
+            columns:
+              - column:
+                  name: id
+                  type: bigint
+                  autoIncrement: true
+                  constraints:
+                    primaryKey: true
+                    nullable: false
+
+              - column:
+                  name: amount
+                  type: numeric(16,2)
+                  constraints:
+                    nullable: false
+
+              - column:
+                  name: description
+                  type: text
